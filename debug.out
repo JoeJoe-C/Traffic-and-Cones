@@ -1,0 +1,136 @@
+==41082== Memcheck, a memory error detector
+==41082== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==41082== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==41082== Command: ./traffic 3 5
+==41082== Parent PID: 41081
+==41082== 
+==41082== 
+==41082== HEAP SUMMARY:
+==41082==     in use at exit: 3,239 bytes in 287 blocks
+==41082==   total heap usage: 318 allocs, 31 frees, 5,470 bytes allocated
+==41082== 
+==41082== 12 bytes in 3 blocks are definitely lost in loss record 1 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109E11: getCarRows (cars.c:44)
+==41082==    by 0x10960B: update (rules.c:36)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10942A: main (main.c:59)
+==41082== 
+==41082== 16 bytes in 4 blocks are definitely lost in loss record 2 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109E11: getCarRows (cars.c:44)
+==41082==    by 0x10960B: update (rules.c:36)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10943A: main (main.c:62)
+==41082== 
+==41082== 24 bytes in 6 blocks are definitely lost in loss record 3 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109E11: getCarRows (cars.c:44)
+==41082==    by 0x10960B: update (rules.c:36)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10945A: main (main.c:68)
+==41082== 
+==41082== 28 bytes in 7 blocks are definitely lost in loss record 4 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109E11: getCarRows (cars.c:44)
+==41082==    by 0x10960B: update (rules.c:36)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10944A: main (main.c:65)
+==41082== 
+==41082== 35 bytes in 5 blocks are indirectly lost in loss record 5 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A45: createEmptyBoard (board.c:20)
+==41082==    by 0x109B70: setUpBoard (board.c:41)
+==41082==    by 0x1095E2: setUp (rules.c:28)
+==41082==    by 0x1093A2: main (main.c:45)
+==41082== 
+==41082== 70 bytes in 10 blocks are indirectly lost in loss record 6 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A45: createEmptyBoard (board.c:20)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10942A: main (main.c:59)
+==41082== 
+==41082== 75 (40 direct, 35 indirect) bytes in 1 blocks are definitely lost in loss record 7 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A10: createEmptyBoard (board.c:18)
+==41082==    by 0x109B70: setUpBoard (board.c:41)
+==41082==    by 0x1095E2: setUp (rules.c:28)
+==41082==    by 0x1093A2: main (main.c:45)
+==41082== 
+==41082== 84 bytes in 21 blocks are definitely lost in loss record 8 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109E11: getCarRows (cars.c:44)
+==41082==    by 0x10960B: update (rules.c:36)
+==41082==    by 0x1093B1: main (main.c:50)
+==41082== 
+==41082== 140 bytes in 20 blocks are indirectly lost in loss record 9 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A45: createEmptyBoard (board.c:20)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10943A: main (main.c:62)
+==41082== 
+==41082== 150 (80 direct, 70 indirect) bytes in 2 blocks are definitely lost in loss record 10 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A10: createEmptyBoard (board.c:18)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10942A: main (main.c:59)
+==41082== 
+==41082== 210 bytes in 30 blocks are indirectly lost in loss record 11 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A45: createEmptyBoard (board.c:20)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10945A: main (main.c:68)
+==41082== 
+==41082== 245 bytes in 35 blocks are indirectly lost in loss record 12 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A45: createEmptyBoard (board.c:20)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10944A: main (main.c:65)
+==41082== 
+==41082== 300 (160 direct, 140 indirect) bytes in 4 blocks are definitely lost in loss record 13 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A10: createEmptyBoard (board.c:18)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10943A: main (main.c:62)
+==41082== 
+==41082== 450 (240 direct, 210 indirect) bytes in 6 blocks are definitely lost in loss record 14 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A10: createEmptyBoard (board.c:18)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10945A: main (main.c:68)
+==41082== 
+==41082== 525 (280 direct, 245 indirect) bytes in 7 blocks are definitely lost in loss record 15 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A10: createEmptyBoard (board.c:18)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1099BA: pMove (rules.c:211)
+==41082==    by 0x10944A: main (main.c:65)
+==41082== 
+==41082== 735 bytes in 105 blocks are indirectly lost in loss record 16 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A45: createEmptyBoard (board.c:20)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1093B1: main (main.c:50)
+==41082== 
+==41082== 1,575 (840 direct, 735 indirect) bytes in 21 blocks are definitely lost in loss record 17 of 17
+==41082==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==41082==    by 0x109A10: createEmptyBoard (board.c:18)
+==41082==    by 0x10962E: update (rules.c:41)
+==41082==    by 0x1093B1: main (main.c:50)
+==41082== 
+==41082== LEAK SUMMARY:
+==41082==    definitely lost: 1,804 bytes in 82 blocks
+==41082==    indirectly lost: 1,435 bytes in 205 blocks
+==41082==      possibly lost: 0 bytes in 0 blocks
+==41082==    still reachable: 0 bytes in 0 blocks
+==41082==         suppressed: 0 bytes in 0 blocks
+==41082== 
+==41082== For lists of detected and suppressed errors, rerun with: -s
+==41082== ERROR SUMMARY: 11 errors from 11 contexts (suppressed: 0 from 0)
