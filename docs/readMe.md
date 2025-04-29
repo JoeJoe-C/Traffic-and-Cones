@@ -1,7 +1,5 @@
 # Traffic Game: Assignment 01
 
-By: Yoseph Campbell
-Student ID: 21552155
 Date Created: 17/09/2023
 
 ## How to run
